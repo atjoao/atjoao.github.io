@@ -1,0 +1,493 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Inter", sans-serif;
+}
+
+body {
+    background-color: #F2F2F0;
+}
+
+section {
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+#content {
+    flex: 1;
+    display: flex;
+    max-height: 90vh;
+}
+
+#stuffiuse {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+#stuffiuse .img-container {
+    width: 190px;
+    height: 190px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#stuffiuse .img-container:nth-child(even) {
+    margin-top: 40px;
+}
+
+#content {
+    justify-content: space-between;
+}
+
+#content #intro {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 40px;
+    flex: 1;
+}
+
+#intro #hello {
+    display: flex;
+    font-size: 72px;
+    flex-direction: column;
+}
+
+#intro #hello > span {
+    display: flex;
+    align-items: center;
+}
+
+#intro #hello > span svg {
+    max-height: 60px;
+}
+
+#intro #introdesc {
+    font-size: 36px;
+    font-weight: 500;
+    max-width: 30ch;
+}
+
+section #next {
+    text-align: center;
+    padding: 20px 0;
+}
+
+.projContent {
+    display: flex;
+    height: 100%;
+    padding: 0 40px;
+    gap: 20px;
+}
+
+#projectInfo {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: center;
+}
+
+#projectInfo #projectName {
+    display: flex;
+    color: #22445F;
+    font-family: "JetBrains Mono", monospace;
+    gap: 10px;
+    font-size: 36px;
+}
+
+#projectInfo #projectName::before {
+    content: '';
+    display: block;
+    width: 8px;
+    background-color: #22445F;
+}
+
+#projectInfo #projectDesc {
+    background-color: #EAEAEA;
+    width: 100%;
+    border: 2px solid #000;
+    padding: 20px;
+    gap: 10px;
+    display: flex;
+    flex-direction: column;
+    max-height: 50vh;
+    flex: 1;
+    font-size: 36px;
+    font-weight: 500;
+}
+
+#projectInfo #projectDesc > p {
+    display: flex;
+    justify-content: space-between;
+    gap: 50px;
+}
+
+#projectInfo #projectDesc #builtWith {
+    display: block ruby;
+}
+
+#projectInfo #projectDesc #projectDescription {
+    word-break: break-word;
+}
+
+.projContent #projectImages {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.projContent #projectImages > h1 {
+    color: #22445F;
+    font-family: "JetBrains Mono", monospace;
+    font-size: 36px;
+}
+
+.projContent #projectImages .img-container {
+    width: 100%;
+    height: 50vh;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#next #showsMore {
+    background-color: #FCC96E;
+    padding: 10px 30px;
+    font-family: "JetBrains Mono", monospace;
+    text-decoration: none;
+    color: black;
+}
+
+.next2 {
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.next2 > div span svg {
+    width: 2em;
+    height: 2em;
+    margin-top: 2px;
+}
+
+.next2 > div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.grid-layout {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 10px;
+    height: 90vh;
+    width: 100%;
+    padding: 40px;
+}
+
+.grid-layout > div {
+    background-color: #D9D9D9;
+    padding: 20px;
+    overflow: auto;
+    font-size: 28px;
+}
+
+.grid-layout > div a, .grid-layout > div p, .grid-layout > div h1 {
+    font-family: "JetBrains Mono", monospace;
+}
+
+.grid-layout > div h1 {
+    display: flex;
+    gap: 10px;
+}
+
+.grid-layout > div h1::before {
+    content: '';
+    display: block;
+    width: 8px;
+    background-color: #22445F;
+}
+
+.socials {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    grid-area: 1 / 1 / 3 / 2;
+}
+
+.socials div {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.interests {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    grid-area: 2 / 1 / 3 / 2;
+}
+
+.programming {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    grid-area: 1 / 2 / 3 / 3;
+}
+
+.programming div {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+
+.projectsGrid {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.projectsGrid > div div h1 {
+    font-family: "JetBrains Mono", monospace;
+} 
+
+.projectsGrid > div div a {
+    background-color: #FCC96E;
+    padding: 10px 30px;
+    font-family: "JetBrains Mono", monospace;
+    text-decoration: none;
+    color: black;
+}
+
+.projectsGrid > div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #EAEAEA;
+    border: 2px solid #000;
+    padding: 10px 20px;
+}
+
+.projectsGrid img {
+    max-height: 150px;
+    width: auto;
+    object-fit: contain;
+}
+
+.projectsGrid p {
+    min-width: 50ch;
+    max-width: 50ch;
+    text-align: center;
+}
+
+@media (max-width: 1140px) {
+    #stuffiuse {
+        display: none;
+    }
+
+    #intro #hello {
+        font-size: 54px;
+    }
+
+    #intro #introdesc {
+        font-size: 28px;
+    }
+
+    #projectInfo #projectName,
+    .projContent #projectImages > h1 {
+        font-size: 28px;
+    }
+
+    #projectInfo #projectDesc {
+        font-size: 24px;
+    }
+
+    .grid-layout {
+        gap: 15px;
+        padding: 20px;
+    }
+
+    .grid-layout > div {
+        font-size: 24px;
+    }
+
+    .programming div {
+        display: flex;
+        gap: 20px;
+    }
+
+    .projectsGrid > div {
+        flex-direction: column;
+        gap: 50px;
+        padding: 20px;
+    }
+}
+
+@media (max-width: 767px) {
+    .projContent {
+        flex-direction: column;
+    }
+
+    .projContent #projectImages {
+        padding-bottom: 20px;
+    }
+
+    .grid-layout {
+        display: flex;
+        flex-direction: column;
+        height: auto;
+    }
+
+    #intro #hello {
+        font-size: 42px;
+    }
+
+    #intro #introdesc {
+        font-size: 24px;
+        max-width: 100%;
+    }
+
+    .grid-layout > div {
+        font-size: 20px;
+    }
+
+    .grid-layout {
+        display: flex;
+        flex-direction: column;
+        height: auto;
+        gap: 20px;
+        padding: 20px;
+    }
+
+    .grid-layout > div {
+        font-size: 18px;
+        padding: 15px;
+    }
+
+    .grid-layout > div h1 {
+        font-size: 24px;
+    }
+
+    .socials, .interests, .programming {
+        width: 100%;
+    }
+
+    .programming div {
+        gap: 15px;
+    }
+}
+
+@media (max-width: 480px) {
+    .grid-layout {
+        padding: 10px;
+    }
+
+    .grid-layout > div {
+        font-size: 16px;
+        padding: 10px;
+    }
+
+    .grid-layout > div h1 {
+        font-size: 20px;
+    }
+}
+
+#indicator {
+    position: fixed;
+    top: 20px;
+    left: 30px;
+    font-family: "JetBrains Mono", monospace;
+    text-decoration: none;
+    color: black;
+    z-index: 1;
+}
+.modal {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1000;
+    background-color: white;
+    padding: 30px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    width: max-content;
+}
+
+.modal-show {
+    display: block;
+    animation: fadeIn 0.3s ease-out;
+}
+
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 999;
+    display: none;
+}
+
+.modal-overlay-show {
+    display: block;
+    animation: fadeInOverlay 0.3s ease-out;
+}
+
+.modal-close {
+    position: absolute;
+    top: -3px;
+    right: 10px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 30px;
+    height: fit-content;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeInOverlay {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@media (max-width: 1140px) {
+    .modal {
+        height: 90%;
+        width: 90%;
+        overflow: auto;
+    }
+
+    .modal-close {
+        font-size: 24px;
+        top: 5px;
+        right: 10px;
+    }
+}

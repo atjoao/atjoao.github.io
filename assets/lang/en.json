@@ -1,0 +1,25 @@
+{
+    "hello": "Hello,\nI'm João",
+    "introdesc": "Welcome to my portefolio\nHere, you can find some of my projects.",
+    "project": "See Projects",
+    "images": "Project Images",
+    "showsMore" : "See more",
+    "aboutme" : "About Me",
+    "contactsText": "Contact me",
+    "interestsText" : "Interests",
+    "interestsParagraph": "I like exploring new technologies and being able to bring thoughts to reality, learning more in the process. I also like anime, music and games.",
+    "programmingText" : "Programming Languages",
+    "programmingParagraph" : [
+        "These are the following programming languages I know how to use:",
+        "JS/TS, Python, PHP, SQL",
+        "Made projects with the following frameworks",
+        "React, NextJS, Express, Svelte, Flask, FastAPI, HTMX, Astro, Gin-Gonic, Wordpress",
+        "Currently (learning) making projects in:",
+        "Go, C#(dotnet), Dart/Flutter"
+    ],
+    "sectInicio": "Introduction",
+    "sectProj": "Projects",
+    "sectAbout": "About Me",
+    "builtWith": "Made with:",
+    "projectDescription": "This project is a music streaming platform, where you can listen to music, create playlists and use your own music."
+}
