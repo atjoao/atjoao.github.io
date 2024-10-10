@@ -90,8 +90,6 @@ document.addEventListener('DOMContentLoaded', function() {
                     .then((r) => {
                         const keys = Object.keys(r);
                         keys.forEach((key) => {
-                            
-                            console.log(document.getElementById(key).getAttribute("name"));
                             if (document.getElementById(key).tagName.toLocaleLowerCase() == "section"){
                                 document.getElementById(key).dataset.title = r[key];
                                 return;
