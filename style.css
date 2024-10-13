@@ -416,6 +416,7 @@ section #next {
     color: black;
     z-index: 1;
 }
+
 .modal {
     position: fixed;
     top: 50%;
@@ -426,11 +427,12 @@ section #next {
     padding: 30px;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
     width: max-content;
+    opacity: 0; /* Initially hidden */
 }
 
 .modal-show {
     display: block;
-    animation: fadeIn 0.3s ease-out;
+    animation: slideUp 0.3s ease-out forwards;
 }
 
 .modal-overlay {
@@ -460,11 +462,13 @@ section #next {
     height: fit-content;
 }
 
-@keyframes fadeIn {
+@keyframes slideUp {
     from {
+        transform: translate(-50%, 50%);
         opacity: 0;
     }
     to {
+        transform: translate(-50%, -50%);
         opacity: 1;
     }
 }
