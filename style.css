@@ -258,7 +258,7 @@ section #next {
 
 .projectsGrid {
     display: flex;
-    flex-direction: column;
+    flex-direction: column-reverse;
     gap: 20px;
 }
 
@@ -427,7 +427,7 @@ section #next {
     padding: 30px;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
     width: max-content;
-    opacity: 0; /* Initially hidden */
+    opacity: 0;
 }
 
 .modal-show {
